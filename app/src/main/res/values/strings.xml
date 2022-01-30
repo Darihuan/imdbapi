@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IMDBapi</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">List Movies</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="song_img_desc">Imagen de la pelicula</string>
+    <string name="input_hint_title">Buscar...</string>
+    <string name="input_helper_required">Introduce titulo pelicula a buscar</string>
+    <string name="search">Buscar pelicula</string>
+    <string name="DBNAME">peliculas</string>
+    <string name="action_deleteall">borrar todos los elementos</string>
+    <string name="title_first_fragment">Movies List</string>
+    <string name="title_second_fragment">search movie</string>
+</resources>

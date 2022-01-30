@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.darihuan.imdbapi.MainActivity">
+    <item
+        android:id="@+id/borrar_icon"
+        android:orderInCategory="100"
+        android:title="@string/action_deleteall"
+        android:icon="@drawable/ic_borrar"
+        android:visible="false"
+        app:showAsAction="always"
+       />
+</menu>
