@@ -15,6 +15,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import org.darihuan.imdbapi.BuildConfig
 import org.darihuan.imdbapi.R
 import org.darihuan.imdbapi.common.entities.Film
 import org.darihuan.imdbapi.databinding.FragmentSecondBinding
@@ -60,7 +61,7 @@ class SearchFilmFragment : Fragment(),OnclickListener {
             if(_binding?.inputTitle?.text?.isEmpty() == true)
                 Toast.makeText(requireContext(),"Empty search term",Toast.LENGTH_SHORT).show()
             else
-             _searchFilmViewModel.searchResults(_binding?.inputTitle?.text.toString().trim(),"k_6w8pe5qf");
+             _searchFilmViewModel.searchResults(_binding?.inputTitle?.text.toString().trim(),BuildConfig.apikey);
                 _searchFilmViewModel.response.observe(
                     viewLifecycleOwner,{peliculas->
                         _adapter.submitList(peliculas.films)
